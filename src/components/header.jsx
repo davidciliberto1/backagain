@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function Header() {
   const [header, setHeader] = useState("");
 
-  return <h1>{header}
+  return <div><h1>{header}</h1>
   <input onChange={e => setHeader(e.target.value)} />
-  </h1>
+  </div>
 }
 
 export default Header;
