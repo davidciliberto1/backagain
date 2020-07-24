@@ -9,7 +9,7 @@ function Saludo(){
     <div>
       <h1>{hola}</h1>
       <input
-       className="input" 
+       className="hola" 
        type="text" 
        placeholder="saludando"
        onChange={e => setHola(e.target.value)}

@@ -4,6 +4,7 @@ import Saludo from "./components/saludo";
 import Header from "./components/header";
 import Contador from "./components/contador";
 import Nombre from './components/nombre';
+import Edad from './components/edad';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Saludo />
       <Contador />
       <Nombre />
+      <Edad />
     </div>
   );
 }

@@ -1,7 +1,26 @@
 .App {
+  display: flexbox;
+
   text-align: center;
 }
 
-.input {
+.hola {
+  display: flexbox;
   background-color: rgba(20, 100, 100, 0.2);
+}
+.header {
+  background-color: rgba(20, 100, 100, 0.2);
+}
+
+.contador {
+  align-content: space-around;
+  display: flexbox;
+  background-color: rgba(20, 100, 100, 0.2);
+}
+
+.buttonSuma {
+  background-color: rgba(200, 200, 290);
+  border: none;
+  border-radius: 25%;
+  /* opacity: 0.5; */
 }

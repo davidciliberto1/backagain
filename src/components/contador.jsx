@@ -4,8 +4,9 @@ function Contador() {
 const [cuenta, setCuenta] = useState(0)
 
 return( 
-    <div> <p>Clickeaste {cuenta} veces.</p> 
-    <button 
+    <div className='contador'> <p>Clickeaste {cuenta} veces.</p> 
+    <button
+    className='buttonSuma' 
     onClick={() => setCuenta(cuenta + 1)}
     > Click me </button>
     <button onClick={() => setCuenta(cuenta - 1)}
