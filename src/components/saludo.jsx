@@ -1,11 +1,20 @@
-import React from 'react'
+import React, {useState} from "react";
 
-export const Saludo = () => {
-    return (
-        <div>
-            <h1>HOliiiis</h1>
-            <input className='input' type='text' placeholder='saludando'></input>
-        </div>
-    )
-}
+function Saludo(){
+
+    
+        const [hola, setHola] = useState('') 
+     
+  return (
+    <div>
+      <h1>{hola}</h1>
+      <input
+       className="input" 
+       type="text" 
+       placeholder="saludando"
+       onChange={e => setHola(e.target.value)}
+       />
+    </div>
+  );
+};
 export default Saludo;
