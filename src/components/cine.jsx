@@ -2,22 +2,23 @@ import React, { useState, useEffect } from "react";
 
 const Prueba = () => {
   const datos = [
-    { id: 1, name: "david" },
-    { id: 2, name: "lali" },
-    { id: 3, name: "ana" },
+  
   ];
 
-  const [equipo, setEquipo] = useState(null);
+  const [equipo, setEquipo] = useState('');
 
   useEffect(() => {
-    setEquipo(datos);
-  }, []);
-
+ obtenerDatos()  
+  }, [])
+const obtenerDatos = async () => {
+  const data = await fetch('https://imdb8.p.rapidapi.com/title/get-top-stripe')
+  const users = await data.json()
+}
   return (
     <div>
-      <h1>erg</h1>
+      <h1>{Prueba}</h1>
     </div>
-  );
+  )
 };
 
 export default Prueba;
