@@ -5,15 +5,19 @@ const Prueba = () => {
   
   ];
 
-  const [equipo, setEquipo] = useState('');
+  const [equipo, setEquipo] = useState();
 
   useEffect(() => {
- obtenerDatos()  
+ obtenerDatos()
+ console.log(obtenerDatos())
   }, [])
 const obtenerDatos = async () => {
-  const data = await fetch('https://imdb8.p.rapidapi.com/title/get-top-stripe')
-  const users = await data.json()
-}
+  // const data = fetch();
+  //   const users = await data.json()
+  //   console.log(users);
+  
+  }
+  
   return (
     <div>
       <h1>{Prueba}</h1>
