@@ -6,6 +6,7 @@ import Contador from "./components/contador";
 import Nombre from './components/nombre';
 import Edad from './components/edad';
 import Prueba from './components/cine';
+import Randomize from './components/randomize';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Contador />
       <Nombre />
       <Edad />
+      <Randomize/>
+
     </div>
   );
 }

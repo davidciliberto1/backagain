@@ -12,10 +12,7 @@ const Prueba = () => {
  console.log(obtenerDatos())
   }, [])
 const obtenerDatos = async () => {
-  // const data = fetch();
-  //   const users = await data.json()
-  //   console.log(users);
-  
+   
   }
   
   return (
